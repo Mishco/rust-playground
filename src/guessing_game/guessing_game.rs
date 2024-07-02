@@ -9,7 +9,7 @@ pub fn guessing_game() {
     let secret_number = rand::thread_rng().gen_range(1..=100);
 
     let tup: (i32, f64, u8) = (500, 6.4, 1);
-    let (x, y, z) = tup;
+    let (_x, y, _z) = tup;
 
     println!("The value of y is: {y}");
     
@@ -47,4 +47,9 @@ pub fn guessing_game() {
     // let y = 10;
 
     // println!("x = {x} and y +2 = {}", y + 2);
+}
+
+#[test]
+fn test_guessing_game() {
+    todo!()
 }
